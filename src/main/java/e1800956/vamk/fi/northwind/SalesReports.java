@@ -19,5 +19,5 @@ public class SalesReports {
   @Column(name = "\"filter_row_source\"", nullable = true)
   private String filterRowSource;
   @Column(name = "\"default\"", nullable = false)
-  private Boolean default;
+  private boolean default2;
 }
