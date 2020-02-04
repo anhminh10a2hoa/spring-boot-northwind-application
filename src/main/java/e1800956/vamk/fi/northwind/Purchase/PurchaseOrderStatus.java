@@ -1,4 +1,4 @@
-package e1800956.vamk.fi.northwind;
+package e1800956.vamk.fi.northwind.Purchase;
 
 import java.sql.*;
 import javax.persistence.*;
