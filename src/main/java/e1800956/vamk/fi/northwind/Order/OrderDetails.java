@@ -1,4 +1,4 @@
-package e1800956.vamk.fi.northwind;
+package e1800956.vamk.fi.northwind.Order;
 
 import java.sql.*;
 import javax.persistence.*;

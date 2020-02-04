@@ -1,4 +1,4 @@
-package e1800956.vamk.fi.northwind;
+package e1800956.vamk.fi.northwind.Customer;
 
 import java.util.Optional;
 
@@ -13,24 +13,24 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @RestController
-public class OrderDetailsController {
+public class CustomersController {
     @Autowired
-    private OrderDetailsRepository repository;
+    private CustomersRepository repository;
 
-    @RequestMapping(value = "/orderdetails", method = RequestMethod.POST)
-    public @ResponseBody OrderDetails create(@RequestBody final OrderDetails item) {
+    @RequestMapping(value = "/customers", method = RequestMethod.POST)
+    public @ResponseBody Customers create(@RequestBody final Customers item) {
         return repository.save(item);
     }
 
-    @RequestMapping(value = "/orderdetails", produces = { MediaType.APPLICATION_JSON_VALUE,
+    @RequestMapping(value = "/customers", produces = { MediaType.APPLICATION_JSON_VALUE,
             MediaType.APPLICATION_XML_VALUE }, method = RequestMethod.GET)
-    public Iterable<OrderDetails> orderDetails(@RequestParam(value = "name", defaultValue = "World") final String name) {
+    public Iterable<Customers> orderDetails(@RequestParam(value = "name", defaultValue = "World") final String name) {
         return repository.findAll();
     }
 
-    @RequestMapping(value = "/orderdetails/{id}", produces = { MediaType.APPLICATION_JSON_VALUE,
+    @RequestMapping(value = "/customers/{id}", produces = { MediaType.APPLICATION_JSON_VALUE,
         MediaType.APPLICATION_XML_VALUE }, method = RequestMethod.GET)
-    public Optional<OrderDetails> get(@PathVariable("id") final int id) {
+    public Optional<Customers> get(@PathVariable("id") final int id) {
         return repository.findById(id);
     }  
 }

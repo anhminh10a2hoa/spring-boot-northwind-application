@@ -18,6 +18,6 @@ public class SalesReports {
   private String title;
   @Column(name = "\"filter_row_source\"", nullable = true)
   private String filterRowSource;
-  @Column(name = "\"default\"", nullable = false)
-  private boolean default2;
+  @Column(name = "\"default1\"", nullable = false)
+  private boolean default1;
 }

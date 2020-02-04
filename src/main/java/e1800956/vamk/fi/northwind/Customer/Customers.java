@@ -1,13 +1,13 @@
-package e1800956.vamk.fi.northwind;
+package e1800956.vamk.fi.northwind.Customer;
 
 import java.sql.*;
 import javax.persistence.*;
 import lombok.Data;
 
 @Data
-@Entity(name = "e1800956.vamk.fi.northwind.Employees")
-@Table(name = "employees")
-public class Employees {
+@Entity(name = "e1800956.vamk.fi.northwind.Customers")
+@Table(name = "customers")
+public class Customers {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

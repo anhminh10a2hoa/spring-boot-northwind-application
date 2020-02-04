@@ -1,4 +1,4 @@
-package e1800956.vamk.fi.northwind;
+package e1800956.vamk.fi.northwind.Employee;
 
 import java.io.Serializable;
 import java.sql.*;
